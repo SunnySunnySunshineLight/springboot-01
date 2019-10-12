@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: msg
+  ##禁用模板引擎缓存
+  thymeleaf:
+    cache: false

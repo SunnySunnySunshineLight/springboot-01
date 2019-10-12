@@ -1,0 +1,23 @@
+<!DOCTYPE >
+<html lang="en" html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>成功</h1>
+    <hr>
+    <div th:text="${code}">页面访问结果</div>
+    <hr>
+    <div th:each="name:${name}">
+        <h1 th:text="${name}"></h1>
+    </div>
+    <hr>
+    <div>
+        <h1 th:text="${name}" th:each="name:${name}"></h1>
+    </div>
+    <hr>
+    <span th:each="name:${name}">[[${name}]]</span>
+    </div>
+</body>
+</html>
